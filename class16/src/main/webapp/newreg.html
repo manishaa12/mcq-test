@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>online mcq app</title>
+<style>
+       /* General body styling */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #283c86, #45a247), url('https://source.unsplash.com/1600x900/?education,learning');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: #f0f0f0;
+    }
+
+    /* Form container styling */
+    .registration-container {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 40px;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+ }
+
+    h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Input field styling */
+    .registration-container input[type="text"],
+    .registration-container input[type="password"],
+    .registration-container input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        background: #34495e;
+        color: #ecf0f1;
+        font-size: 16px;
+    }
+
+    .registration-container input[type="radio"] {
+        margin-right: 8px;
+    }
+ .registration-container label {
+        font-size: 15px;
+    }
+
+    /* Submit button styling */
+    .registration-container input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #1abc9c;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .registration-container input[type="submit"]:hover {
+        background-color: #16a085;
+        transform: translateY(-2px);
+    }
+
+    .role-selection {
+        margin: 10px 0;
+    }
+/* Link styling */
+    .registration-container p {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .registration-container a {
+        color: #1abc9c;
+        text-decoration: none;
+    }
+
+    .registration-container a:hover {
+        text-decoration: underline;
+    }
+
+</style>
+</head>
+<body>
+<div class="registration-container">
+        <h1>New User Registration</h1>
+   <form action=regaction.jsp method=post>
+   
+  
+   <input type="text" placeholder="Username" name=u>
+   <input type="password" placeholder="Password" name=p> 
+   <input type= "email" placeholder="Email" name=e>
+   <input type= radio name="r" value="Student" placeholder="role" name=r>Student<input type= radio name="r" value="Faculty" placeholder="role" name=r>faculty
+  
+   
+                
+            
+            <input type="submit" value="Register">
+        </form>
+        <p>Already have an account? <a href="mcqhome.html">Log in here</a></p>
+    </div>
+
+</body>
+</html>

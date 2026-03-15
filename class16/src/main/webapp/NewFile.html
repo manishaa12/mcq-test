@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Selection - MCQ Practice App</title>
+    <style>
+       /* Body background styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            max-width: 1200px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffe08a;
+        }
+
+        .subject-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .subject-card {
+            background: #34495e;
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            transition: transform 0.3s, background 0.3s;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .subject-card:hover {
+            transform: scale(1.05);
+            background: #2c3e50;
+        }
+
+        .subject-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .question-count {
+            font-size: 16px;
+            color: #d1d1d1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Choose Your Subject for the Practice Test</h1>
+    <div class="subject-grid">
+        <a href="start_test.jsp?subject=Java" class="subject-card">
+            <div class="subject-name">Java</div>
+            <div class="question-count">Questions Available: 50</div>
+        </a>
+        <a href="start_test.jsp?subject=Operating System" class="subject-card">
+            <div class="subject-name">Operating System</div>
+            <div class="question-count">Questions Available: 40</div>
+        </a>
+        <a href="start_test.jsp?subject=C Programming" class="subject-card">
+            <div class="subject-name">C Programming</div>
+            <div class="question-count">Questions Available: 45</div>
+        </a>
+        <a href="start_test.jsp?subject=Oracle" class="subject-card">
+            <div class="subject-name">Oracle</div>
+            <div class="question-count">Questions Available: 35</div>
+        </a>
+        <a href="start_test.jsp?subject=Aptitude" class="subject-card">
+            <div class="subject-name">Aptitude</div>
+            <div class="question-count">Questions Available: 60</div>
+        </a>
+        <a href="start_test.jsp?subject=Data Structure" class="subject-card">
+            <div class="subject-name">Data Structure</div>
+            <div class="question-count">Questions Available: 55</div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

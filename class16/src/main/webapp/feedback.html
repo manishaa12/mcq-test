@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #CAB8F7, rgb(113, 83, 184)), url('https://source.unsplash.com/1600x900/?education,books');
+        background-size: cover;
+        background-blend-mode: overlay;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        color: #333;
+       position:absolute;
+       top:5%;
+       left:42%;
+       
+
+    }
+
+    form {
+        background-color: #ECE9E9;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+    }
+
+    label {
+        font-size: 14px;
+        color: #555;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form method="POST" action="subfeed.jsp">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Feedback:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
