@@ -16,10 +16,10 @@ A web-based MCQ exam application built with Java Servlets, JSP and MySQL. Studen
 
 ## How to Run
 1. Clone the repo: `git clone https://github.com/manishaa12/mcq-test.git`
-2. Create a MySQL database and import the SQL file (add your .sql file name here).
+2. Create a MySQL database and the required tables (users, questions, answers).
 3. Update the DB username and password in the connection file.
-4. Import the project in Eclipse and run it on Apache Tomcat.
-5. Open `http://localhost:8080/<project-name>` in your browser.
+4. Import the project in Eclipse as a Maven project and run it on Apache Tomcat.
+5. Open `http://localhost:8080/class16` in your browser.
 
 ## Testing
 Tested scoring with multiple answer combinations (all correct, all wrong, partial, unattempted) and fixed bugs that produced wrong results.
